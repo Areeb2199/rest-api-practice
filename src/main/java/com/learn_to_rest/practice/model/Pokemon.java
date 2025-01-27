@@ -1,6 +1,6 @@
 package com.learn_to_rest.practice.model;
 
-public class pokemon
+public class Pokemon
 {
     private String  pokemonId;
     private String  pokemonName;
@@ -8,11 +8,11 @@ public class pokemon
     private int  pokemonHealth;
     private int  pokemonLevel;
 
-    public pokemon() {
+    public Pokemon() {
         //Need empty constructor
     }
 
-    public pokemon(String pokemonId, String pokemonName, String pokemonStats, int pokemonHealth, int pokemonLevel) {
+    public Pokemon(String pokemonId, String pokemonName, String pokemonStats, int pokemonHealth, int pokemonLevel) {
         this.pokemonId = pokemonId;
         this.pokemonName = pokemonName;
         this.pokemonStats = pokemonStats;
