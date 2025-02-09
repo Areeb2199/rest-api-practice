@@ -11,8 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/pokemon")
-public class PokemonController
-{
+public class PokemonController {
 
     @Autowired
     private PokemonRepository pokemonRepository;

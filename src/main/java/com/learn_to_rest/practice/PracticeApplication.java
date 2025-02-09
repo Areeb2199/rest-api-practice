@@ -21,7 +21,6 @@ public class PracticeApplication implements CommandLineRunner {
 	// Run method executes whenever SB starts for the first time
 	@Override
 	public void run(String... args) throws Exception {
-		if(pokemonRepository.count() == 0) { // if DB empty
 			Pokemon pokemon = new Pokemon(); // new obj of pokemon
 			pokemon.setPokemonName("Pikachu");
 			pokemon.setPokemonLevel(1000);
@@ -35,6 +34,13 @@ public class PracticeApplication implements CommandLineRunner {
 			pokemon1.setPokemonHealth(5000);
 			pokemon1.setPokemonStats("Strong");
 			pokemonRepository.save(pokemon1); // saving new pokemon obj to the database
-		}
+
+			Pokemon pokemon2 = new Pokemon(); // new obj of pokemon
+			pokemon2.setPokemonName("Babsi");
+			pokemon2.setPokemonLevel(696969);
+			pokemon2.setPokemonHealth(696969696);
+			pokemon2.setPokemonStats("ULTRA LEGEND");
+			pokemonRepository.save(pokemon2); // saving new pokemon obj to the database
+
 	}
 }
